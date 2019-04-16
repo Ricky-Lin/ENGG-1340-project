@@ -2,7 +2,7 @@
 With the development of the economy, people's salaries are becoming higher and higher. However, many people do not know how to manage their finances well so that they fritter most money away and have few savings. Therefore, learning how to manage and allocate our money properly is of paramount importance to our daily life and can help us create more wealth. In this project, we are going to implement an accounting system to help people keep track of their daily expenses and incomes and help them form a good habit of managing money.
 
 The following are some features about this account system.
-1. People can add records of incomes, and expenses at any time.
+1. People can add records of incomes, and expenses in one time.
 2. The records contain some basic information, such as the amount of money, date of record, type of income or expense (e.g., food, game, salary,etc.), type of account (e.g., cash, bank card, credit card, etc.).
 3. The records can be deleted and edited at any time.
 4. Users can view their records by date, type, and account.
