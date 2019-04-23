@@ -1,1 +1,1 @@
-
+void viewincome()
