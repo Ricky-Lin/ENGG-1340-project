@@ -50,11 +50,11 @@ main(){
    }
    cin>>x;
    if (x=="DELETEA"){
-     delete [] a;
+     delete [] a; //This line is to delete income records.
    }
    cin>>x;
    if (x=="DELETEB"){
-     delete [] b;
+     delete [] b; //This line is to delete expense records.
    } 
    cin>>x;
    if (x=="DONE"){
