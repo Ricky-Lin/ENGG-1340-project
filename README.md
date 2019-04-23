@@ -8,7 +8,7 @@ The following are some features about this account system.
 4. Users can view their records by date, type, and account.
 5. The system can provide a statistical report of the user's financial state (e.g., monthly incomes and expenses, the percentage of food expenses, etc.).
 6. The system allows a budget setting. When expenses reach the budget, there will be a warning from the system to remind users.
-7. The system helps users find out exchange rate and change one currency to another when it is necessary.(Additional function) 
+7. The system helps users find out exchange rate from Hong Kong Dollars to other currencies and change HKD to another currency when it is necessary.(Additional function) 
 
 The following are some reasonable assumptions about this account system.
 1. It is assumed that there is a max number of records that the system can handle.
