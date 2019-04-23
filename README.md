@@ -12,4 +12,5 @@ The following are some features about this account system.
 
 The following are some reasonable assumptions about this account system.
 1. It is assumed that there is a max number of records that the system can handle.
-2. It is assumed that the system can only handle some commonly used currencies (e.g., HKD, USD, RMB, YEN, EURO, GBP, KRW, etc.)
+2. it is assumed that the system can only record month by month. After next month, the previous record will not be counted.
+3. It is assumed that the system can only handle some commonly used currencies (e.g., HKD, USD, RMB, YEN, EURO, GBP, KRW, etc.)
