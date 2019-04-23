@@ -1,5 +1,5 @@
 //The user inputs the type of expenses he/she wants to check and then the system outputs the corresponding amount.
-void viewexpense(record * b[],max){
+void viewexpense(record * b[],int max){
   double sum1=0,sum2=0,sum3=0;
   string type;
   cout<<"What type of expenses do you want to check?"<<endl;
