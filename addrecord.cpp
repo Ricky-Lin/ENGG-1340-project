@@ -1,5 +1,6 @@
 include<iostream>
 using namespace std;
+//The expense and income records are of a structure type, containing the amonut of money, the account type, the type of money and date of records.
 struct record{
   string accounttype;
   string moneytype;
@@ -8,6 +9,7 @@ struct record{
 };
 mian(){
   int const max=100;
+  //Use dynamic memory to create an array of records in order to delete the records conveninently.
   record * a=new record [max];
   record * b=new record [max];
   int i=0,j=0;
@@ -16,6 +18,7 @@ mian(){
   cin>>x;
   if (x=="INCOME"){
     for (i;i<max;i++){
+      //Get user's input of the amonut of money, the account type, the type of money and date of income records.
       cin>>a[i].money;
       cin>>a[i].moneytype;
       cin>>a[i].accounttype;
@@ -29,6 +32,7 @@ mian(){
   }
   if (x=="EXPENSE"){
     for (j;j<max;j++){
+      //Get user's input of the amonut of money, the account type, the type of money and date of expense records.
       cin>>b[j].money;
       cin>>b[j].moneytype;
       cin>>b[j].accounttype;
@@ -40,8 +44,11 @@ mian(){
       }  
     }
   }
-  if (x=="DELETE"){
+  if (x=="DELETEA"){
     delete [] a;
+  } 
+  if (x=="DELETEB"){
+    delete [] b;
   } 
   cin>>x;
 }
