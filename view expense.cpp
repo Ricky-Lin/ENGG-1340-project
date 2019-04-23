@@ -1,6 +1,6 @@
 //The user inputs the type of expenses he/she wants to check and then the system outputs the corresponding amount.
 void viewexpense(record * b[],max){
-  int sum1=0,sum2=0,sum3=0;
+  double sum1=0,sum2=0,sum3=0;
   string type;
   cin>>type;
   for(int i=0;i<max;i++){
