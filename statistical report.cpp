@@ -10,6 +10,7 @@ void report(record * a, record * b,num1,num2){
     t2+=b[j].money;
   }
   cout<<"Your monthly expenses are "<<t2<<endl;
+  
   cout<<"The percentage of what incomes do ypu want to check?"<<endl;
   cin>>x;
   for (int i=0;i<=num1;i++){
