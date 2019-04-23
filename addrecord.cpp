@@ -43,4 +43,5 @@ mian(){
   if (x=="DELETE"){
     delete [] a;
   } 
-  
+  cin>>x;
+}
