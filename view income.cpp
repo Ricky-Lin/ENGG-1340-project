@@ -1,5 +1,5 @@
 //The user inputs the type of incomes he/she wants to check and then the system outputs the corresponding amount.
-void viewincome(record * a[],max){
+void viewincome(record * a[],int max){
   double sum1=0,sum2=0,sum3=0;
   string type;
   cout<<"What type of incomes do you want to check?"<<endl;
