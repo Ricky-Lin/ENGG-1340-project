@@ -10,29 +10,32 @@ mian(){
   int const max=100;
   record * a=new record [max];
   record * b=new record [max];
+  int i=0,j=0;
   string x;
   cout<<"What do you want to do?"<<endl;
   cin>>x;
   if (x=="INCOME"){
-    for (int i=0;i<max;i++){
+    for (i;i<max;i++){
       cin>>a[i].money;
       cin>>a[i].moneytype;
       cin>>a[i].accounttype;
       cin>>a[i].date;
       cin>>x;
       if (x=="FINISH"){
+        i=i;
         break;
       }  
     }
   }
   if (x=="EXPENSE"){
-    for (int i=0;i<max;i++){
-      cin>>b[i].money;
-      cin>>b[i].moneytype;
-      cin>>b[i].accounttype;
-      cin>>b[i].date;
+    for (j;j<max;j++){
+      cin>>b[j].money;
+      cin>>b[j].moneytype;
+      cin>>b[j].accounttype;
+      cin>>b[j].date;
       cin>>x;
       if (x=="FINISH"){
+        j=j;
         break;
       }  
     }
