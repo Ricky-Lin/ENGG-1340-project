@@ -1,3 +1,4 @@
+//The user inputs the type of incomes he/she wants to check and then the system outputs the corresponding amount.
 void viewincome(record * a[],max){
   int sum1=0,sum2=0,sum3=0;
   string type;
