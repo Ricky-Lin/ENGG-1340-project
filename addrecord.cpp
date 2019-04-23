@@ -31,8 +31,9 @@ main(){
          break;
        }  
      }
-   }
+   cout<<"What do you want to do?"<<endl;
    cin>>x; 
+   }
    if (x=="EXPENSE"){
      for (j;j<max;j++){
        //Get user's input of the amonut of money, the account type, the type of money and date of expense records.
@@ -47,16 +48,19 @@ main(){
          break;
        }  
      }
-   }
+   cout<<"What do you want to do?"<<endl;
    cin>>x;
+   }
    if (x=="DELETEA"){
      delete [] a; //This line is to delete income records.
+     cout<<"What do you want to do?"<<endl;
+     cin>>x;
    }
-   cin>>x;
    if (x=="DELETEB"){
      delete [] b; //This line is to delete expense records.
+     cout<<"What do you want to do?"<<endl;
+     cin>>x;
    } 
-   cin>>x;
    if (x=="DONE"){
      break;
    } 
