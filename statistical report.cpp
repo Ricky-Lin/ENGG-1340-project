@@ -1,5 +1,5 @@
 //Print user's monthly incomes, expensed and percentage of particular expenses or incomes.
-void report(record * a, record * b,num1,num2){
+void report(record * a, record * b,int num1,int num2){
   double t1=0,t2=0,t3=0,t4=0;
   string x,y;
   for (int i=0;i<=num1;i++){
