@@ -66,6 +66,11 @@ main(){
      viewexpense(b,max);//Call the viewexpense function.
      cout<<"What do you want to do?"<<endl;
      cin>>x;
+   }
+   if (x=="CURRENCY"){
+     currency();//Call the currency function.
+     cout<<"What do you want to do?"<<endl;
+     cin>>x;
    } 
    if (x=="DELETEA"){
      delete [] a; //This line is to delete income records.
