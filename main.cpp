@@ -45,12 +45,28 @@ main(){
        cin>>x;
        if (x=="FINISH"){
          j=j+1;
+         budget(b,j);//Call the budget function to see if the user's expenses reach the budget.
          break;
        }  
      }
    cout<<"What do you want to do?"<<endl;
    cin>>x;
    }
+   if (x=="REPORT"){
+     report(a,b,i,j);//Call the report function.
+     cout<<"What do you want to do?"<<endl;
+     cin>>x;
+   }  
+   if (x=="VIEWINCOME"){
+     viewincome(a,max);//Call the viewincome function.
+     cout<<"What do you want to do?"<<endl;
+     cin>>x;
+   } 
+   if (x=="VIEWEXPENSE"){
+     viewexpense(b,max);//Call the viewexpense function.
+     cout<<"What do you want to do?"<<endl;
+     cin>>x;
+   } 
    if (x=="DELETEA"){
      delete [] a; //This line is to delete income records.
      cout<<"What do you want to do?"<<endl;
