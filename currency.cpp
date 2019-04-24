@@ -1,4 +1,4 @@
-//This function exchange HKD to some other currencies.
+//This function gets the amount of HKD and the currency the user wants to exchange and then exchanges HKD to some other currencies.
 void currency(){
   double HKD, changed;
   string currency,x;
