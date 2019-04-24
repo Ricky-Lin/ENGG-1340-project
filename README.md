@@ -16,14 +16,11 @@ The following are some reasonable assumptions about this account system:
 3. It is assumed that the system can only handle some commonly used currencies (e.g., HKD, USD, RMB, YEN, EURO, GBP, KRW, etc.)
 
 Input specifications:
-
 The program requires the inputs of different data types, like string, double, which are subject to different functions.
 
 Compilation instructions:
-
 Use this command line to compile main.cpp.
 g++ -pedantic-errors -std=c++11 main.cpp -o main
 
 Execution instructions:
-
 The input and output are clearly described in the code. Take main function as an example to illustrate. First,the program asks user to input a string, such as "INCOME" and then the user can start adding income records to the system by typing the amount of money, the type of money, account type and date. Adding expenses can be done similarly by entering "EXPENSE". The user can keep entering another keyword to use another function; for example, by entering "REPORT", the user can view his/her monthly incomes, expenses and the percentage of particular incomes and expenses. By entering "VIEWINCOME" or "VIEWEXPENSE", the user can view their incomes and expenses by different types.If the user wants to delete his/her income or expense records, he/she can do so by entering "DELETEIN" and "DELETEEX" repectively.
