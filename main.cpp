@@ -72,12 +72,12 @@ main(){
      cout<<"What do you want to do?"<<endl;
      cin>>x;
    } 
-   if (x=="DELETEA"){
+   if (x=="DELETEIN"){
      delete [] a; //This line is to delete income records.
      cout<<"What do you want to do?"<<endl;
      cin>>x;
    }
-   if (x=="DELETEB"){
+   if (x=="DELETEEX"){
      delete [] b; //This line is to delete expense records.
      cout<<"What do you want to do?"<<endl;
      cin>>x;
