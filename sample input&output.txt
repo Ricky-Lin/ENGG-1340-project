@@ -1,1 +1,86 @@
-
+What do you want to do? //output
+Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE //output
+INCOME //input
+Please enter the amount of money. //output
+20000 //input
+Please enter the type of money. //output
+salary //input
+Please enter the account type. //output
+Band card //input
+Please enter the date. //output
+2019/4/25 //input
+CONTINUE or FINISH? //output
+FINISH //input
+What do you want to do? //output
+Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE //output
+EXPENSE //input
+Please enter the amount of money. //output
+5000 //input
+Please enter the type of money. //output
+Rent //input
+Please enter the account type. //output
+Band card //input
+Please enter the date. //output
+2019/4/20 //input
+CONTINUE or FINISH? //output
+CONTINUE //input
+Please enter the amount of money. //output
+500 //input
+Please enter the type of money. //output
+Electricity and water fee //input
+Please enter the account type. //output
+Cash //input
+Please enter the date. //output
+2019/4/25 //input
+CONTINUE or FINISH? //output
+CONTINUE //input
+Please enter the amount of money. //output
+6000 //input
+Please enter the type of money. //output
+Smartphone //input
+Please enter the account type. //output
+Credit card //input
+Please enter the date. //output
+2019/4/26 //input
+CONTINUE or FINISH? //output
+FIHISH //input
+WARNING! YOU HAVE REACHED YOUR BUDGRT. PLEASE MANAGE YOUR WEALTH PROPERLY!!! //output
+What do you want to do? //output
+Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE //output
+VIEWEXPENSE //input
+What type of expenses do you want to check? //output
+Credit Card //input
+You have used 6000 in terms of Credit card. //output
+What do you want to do? //output
+Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE //output
+REPORT //output
+Your monthly incomes are 20000. //output
+Your monthly expenses are 11500. //output
+The percentage of what incomes do ypu want to check? //output
+Salary //input
+The percentage of the income Salary is 100.0%. //output
+Check another one or stop? //output
+Stop //input
+The percentage of what expenses do ypu want to check? //output
+Rent //input
+The percentage of the expense Rent is 43.5%. //output
+Check another one or stop? //output
+Stop //input
+What do you want to do? //output
+Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE //output
+CURRENCY //input
+Input your HKD and the currency type you want to exchange. //output
+You can input 1.USD 2.RMB 3.YEN 4.EURO 5.GBP 6.KRW for currency type. //output
+1000 USD //input
+The exchanged money is 130 USD. //output
+CONTINUE or FINISH? //output
+CONTINUE //input
+Input your HKD and the currency type you want to exchange. //output
+You can input 1.USD 2.RMB 3.YEN 4.EURO 5.GBP 6.KRW for currency type. //output
+900 KRW //input
+The exchanged money is 131355 KRW. //output
+CONTINUE or FINISH? //output
+FINISH //input
+What do you want to do? //output
+Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE //output
+DONE //input
