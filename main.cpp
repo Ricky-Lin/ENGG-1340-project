@@ -29,7 +29,7 @@ main(){
        cin>>a[i].accounttype;
        cout<<"Please enter the date."<<endl;
        cin>>a[i].date;
-       cout<<"CONTINUE or FINISH"<<endl;
+       cout<<"CONTINUE or FINISH?"<<endl;
        cin>>x;
        if (x=="FINISH"){
          i=i+1;
@@ -51,7 +51,7 @@ main(){
        cin>>b[j].accounttype;
        cout<<"Please enter the date."<<endl;
        cin>>b[j].date;
-       cout<<"CONTINUE or FINISH"<<endl;
+       cout<<"CONTINUE or FINISH?"<<endl;
        cin>>x;
        if (x=="FINISH"){
          budget(b,j);//Call the budget function to see if the user's expenses reach the budget.
