@@ -41,3 +41,4 @@ void report(record * a, record * b,int num1,int num2){
   }  
  }
 }  
+
