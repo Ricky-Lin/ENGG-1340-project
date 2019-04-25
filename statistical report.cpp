@@ -5,11 +5,11 @@ void report(record * a, record * b,int num1,int num2){
   for (int i=0;i<=num1;i++){
     t1+=a[i].money;
   } 
-  cout<<"Your monthly incomes are "<<t1<<endl;
+  cout<<"Your monthly incomes are "<<t1<<"."<<endl;
   for (int j=0;j<=num2;j++){
     t2+=b[j].money;
   }
-  cout<<"Your monthly expenses are "<<t2<<endl;
+  cout<<"Your monthly expenses are "<<"."<<t2<<endl;
   while (true){
    cout<<"The percentage of what incomes do ypu want to check?"<<endl;
    cin>>x;
