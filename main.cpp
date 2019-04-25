@@ -54,8 +54,8 @@ main(){
        cout<<"CONTINUE or FINISH"<<endl;
        cin>>x;
        if (x=="FINISH"){
-         j=j+1;
          budget(b,j);//Call the budget function to see if the user's expenses reach the budget.
+         j=j+1
          break;
        }  
      }
