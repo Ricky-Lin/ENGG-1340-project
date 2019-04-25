@@ -9,18 +9,18 @@ void viewincome(record * a[],int max){
       sum1+=a[i].money;
     }
   } 
-  cout<<"You have got "<<sum1<<" from "<<type<<endl;
+  cout<<"You have got "<<sum1<<" from "<<type<<" "<<endl;
   for(int i=0;i<max;i++){
     if (a[i].account==type){
       sum2+=a[i].money;
     }
   }
-  cout<<"You have "<<sum2<<" in terms of "<<type<<endl;
+  cout<<"You have "<<sum2<<" in terms of "<<type<<" "<<endl;
   for(int i=0;i<max;i++){
     if (a[i].date==type){
       sum3+=a[i].money;
     }
   }
-  cout<<"You have reveived "<<sum3<<" on "<<type<<endl;
+  cout<<"You have reveived "<<sum3<<" on "<<type<<" "<<endl;
     
 }
