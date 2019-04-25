@@ -1,4 +1,5 @@
 include<iostream>
+include<string>
 using namespace std;
 //The expense and income records are of a structure type, containing the amonut of money, the account type, the type of money and date of records.
 struct record{
