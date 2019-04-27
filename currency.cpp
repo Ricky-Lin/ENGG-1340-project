@@ -4,8 +4,8 @@
 
 void currency(){
   double HKD, changed;
-  string currency;
-  cout<<"Input your HKD and the currency type you want to exchange."<<endl;
+  int currency;
+  cout<<"Please input the amount of HKD and the selected currency type you want to exchange."<<endl;
   cout<<"1.USD 2.RMB 3.YEN 4.EURO 5.GBP 6.KRW"<<endl;
   cin>>HKD>>currency;
   switch(currency){
