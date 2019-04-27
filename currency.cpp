@@ -1,88 +1,33 @@
-//This function gets the amount of HKD and the currency the user wants to exchange and then exchanges HKD to some other currencies.
+//This function gets the amount of HKD and the currency user wants to exchange and then exchanges HKD to some other currencies.
+//Function input:the amount of HKD,the currency user wants to exchange
+//Function output:the amount of money in the currency user selected
+
 void currency(){
   double HKD, changed;
-  string currency,x;
-  while (true){
-    cout<<"Input your HKD and the currency type you want to exchange."<<endl;
-    cout<<"You can input 1.USD 2.RMB 3.YEN 4.EURO 5.GBP 6.KRW for currency type."<<endl;
-    cin>>HKD>>currency;
-    if (currency=="USD"){
+  string currency;
+  cout<<"Input your HKD and the currency type you want to exchange."<<endl;
+  cout<<"1.USD 2.RMB 3.YEN 4.EURO 5.GBP 6.KRW"<<endl;
+  cin>>HKD>>currency;
+  switch(currency){
+    case 1:
       cout<<"The exchanged money is "<<HKD*0.13<<currency<<"."<<endl;
-      cout<<"CONTINUE or FINISH?"<<endl;
-      cin>>x;
-      if (x=="CONTINUE"){
-        cout<<"Input your HKD and the currency type you want to exchange."<<endl;
-        cout<<"You can input 1.USD 2.RMB 3.YEN 4.EURO 5.GBP 6.KRW for currency type."<<endl;
-        cin>>HKD>>currency;
-      } 
-      if (x=="FINISH"){
-        break;
-      }  
-    }
-    if (currency=="RMB"){
+      break;
+    case 2:
       cout<<"The exchanged money is "<<HKD*0.86<<currency<<"."<<endl;
-      cout<<"CONTINUE or FINISH?"<<endl;
-      cin>>x;
-      if (x=="CONTINUE"){
-        cout<<"Input your HKD and the currency type you want to exchange."<<endl;
-        cout<<"You can input 1.USD 2.RMB 3.YEN 4.EURO 5.GBP 6.KRW for currency type."<<endl;
-        cin>>HKD>>currency;
-      } 
-      if (x=="FINISH"){
-        break;
-      }  
-    }
-     if (currency=="YEN"){
+      break;
+    case 3:
       cout<<"The exchanged money is "<<HKD*14.27<<currency<<"."<<endl;
-      cout<<"CONTINUE or FINISH?"<<endl;
-      cin>>x;
-      if (x=="CONTINUE"){
-        cout<<"Input your HKD and the currency type you want to exchange."<<endl;
-        cout<<"You can input 1.USD 2.RMB 3.YEN 4.EURO 5.GBP 6.KRW for currency type."<<endl;
-        cin>>HKD>>currency;
-      } 
-      if (x=="FINISH"){
-        break;
-      }  
-    }
-    if (currency=="EURO"){
+      break;
+    case 4:
       cout<<"The exchanged money is "<<HKD*0.11<<currency<<"."<<endl;
-      cout<<"CONTINUE or FINISH?"<<endl;
-      cin>>x;
-      if (x=="CONTINUE"){
-        cout<<"Input your HKD and the currency type you want to exchange."<<endl;
-        cout<<"You can input 1.USD 2.RMB 3.YEN 4.EURO 5.GBP 6.KRW for currency type."<<endl;
-        cin>>HKD>>currency;
-      } 
-      if (x=="FINISH"){
-        break;
-      }  
-    }
-    if (currency=="GBP"){
+      break;
+    case 5:
       cout<<"The exchanged money is "<<HKD*0.098<<currency<<"."<<endl;
-      cout<<"CONTINUE or FINISH?"<<endl;
-      cin>>x;
-      if (x=="CONTINUE"){
-        cout<<"Input your HKD and the currency type you want to exchange."<<endl;
-        cout<<"You can input 1.USD 2.RMB 3.YEN 4.EURO 5.GBP 6.KRW for currency type."<<endl;
-        cin>>HKD>>currency;
-      } 
-      if (x=="FINISH"){
-        break;
-      }  
-    }
-    if (currency=="KRW"){
+      break;
+    case 6:
       cout<<"The exchanged money is "<<HKD*145.95<<currency<<"."<<endl;
-      cout<<"CONTINUE or FINISH?"<<endl;
-      cin>>x;
-      if (x=="CONTINUE"){
-        cout<<"Input your HKD and the currency type you want to exchange."<<endl;
-        cout<<"You can input 1.USD 2.RMB 3.YEN 4.EURO 5.GBP 6.KRW for currency type."<<endl;
-        cin>>HKD>>currency;
-      } 
-      if (x=="FINISH"){
-        break;
-      }  
-    }
-  } 
+      break;
+    default:
+      cout<<"Sorry for unsupported currency."<<endl;
+  }
 } 
