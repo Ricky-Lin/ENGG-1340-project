@@ -80,37 +80,37 @@ main(){
      report(a,b,i,j);//Call the report function.
      cout<<"Please select function."<<endl;
      cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
-     cin>>x;
+     cin>>funct;
    }  
    if (funct==4){
      viewincome(a,max);//Call the viewincome function.
      cout<<"Please select function."<<endl;
      cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
-     cin>>x;
+     cin>>funct;
    } 
    if (funct==5){
      viewexpense(b,max);//Call the viewexpense function.
      cout<<"Please select function."<<endl;
      cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
-     cin>>x;
+     cin>>funct;
    }
    if (funct==6){
      currency();//Call the currency function.
      cout<<"Please select function."<<endl;
      cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
-     cin>>x;
+     cin>>funct;
    } 
    if (funct==7){
      delete [] a; //This line is to delete income records.
      cout<<"Please select function."<<endl;
      cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
-     cin>>x;
+     cin>>funct;
    }
    if (funct==8){
      delete [] b; //This line is to delete expense records.
      cout<<"Please select function."<<endl;
      cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
-     cin>>x;
+     cin>>funct;
    } 
    if (funct==9){
      break;
