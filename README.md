@@ -16,7 +16,7 @@ The following are some reasonable assumptions about this account system:
 3. It is assumed that the system can only handle some commonly used currencies (e.g., HKD, USD, RMB, YEN, EURO, GBP, KRW, etc.)
 
 Input specifications:
-The program requires the inputs of different data types, like string, double, which are subject to different functions.
+The program requires the inputs of different data types, like int, double, which are subject to different functions.
 
 Compilation instructions:
 Use this command line to compile main.cpp.
