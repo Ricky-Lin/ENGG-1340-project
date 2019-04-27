@@ -14,6 +14,8 @@ FINISH //input
 What do you want to do? //output
 Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE //output
 EXPENSE //input
+Please enter your budget. //output
+10000 //input
 Please enter the amount of money. //output
 5000 //input
 Please enter the type of money. //output
