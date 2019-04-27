@@ -36,7 +36,7 @@ void report(record * a, record * b,int num1,int num2){
        t4+=b[j].money;
      }  
    }
-  cout<<"The percentage of the expense"<<x<<" is "<<fixed<<setprecision(1)<<t4/t2*100<<"%."<<endl;
+  cout<<"The percentage of the expense"<<y<<" is "<<fixed<<setprecision(1)<<t4/t2*100<<"%."<<endl;
   cout<<"Check another one or stop?"<<endl;
   cin>>y;
   if (y=="Stop"){
