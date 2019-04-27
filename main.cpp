@@ -42,6 +42,9 @@ main(){
    cin>>x; 
    }
    if (x=="EXPENSE"){
+     double budget;
+     cout<<"Please enter your budget."<<endl;
+     cin>>budget;
      for (j;j<max;j++){
        //Get user's input of the amonut of money, the account type, the type of money and date of expense records.
        cout<<"Please enter the amount of money."<<endl;
@@ -55,7 +58,7 @@ main(){
        cout<<"CONTINUE or FINISH?"<<endl;
        cin>>x;
        if (x=="FINISH"){
-         budget(b,j);//Call the budget function to see if the user's expenses reach the budget.
+         budget(b,j,budget);//Call the budget function to see if the user's expenses reach the budget.
          j=j+1
          break;
        }  
