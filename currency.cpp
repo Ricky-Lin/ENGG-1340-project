@@ -1,6 +1,6 @@
-//This function gets the amount of HKD and the currency user wants to exchange and then exchanges HKD to some other currencies.
-//Function input:the amount of HKD,the currency user wants to exchange
-//Function output:the amount of money in the currency user selected
+//Function:currency exchange(HKD to other currencies)
+//Input:the amount of HKD,the currency user wants to exchange
+//Output:the amount of money in the currency user selected
 
 void currency(){
   double HKD, changed;
