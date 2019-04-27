@@ -18,6 +18,7 @@ main(){
   int i=0,j=0;
   int funct;
   double budget=10000;
+  cout<<"The date format in this system will be YYYY/MM/DD."<<endl;
   cout<<"Budget will be set as HKD10000 at first."<<endl;
   while(true){
    cout<<"Please select function."<<endl;
