@@ -4,11 +4,11 @@ budget.o:budget.cpp
   g++ -c budget.cpp
 currency.o:currency.cpp
   g++ -c currency.cpp
-statistical report.o:statistical report.cpp
+statisticalreport.o:statisticalreport.cpp
   g++ -c statistical report.cpp
-view expense.o:view expense.cpp
+viewexpense.o:viewexpense.cpp
   g++ -c view expense.cpp
-view income.o:view income.cpp
+viewincome.o:viewincome.cpp
   g++ -c view income.cpp
-main:main.o budget.o currency.o statistical report.o view expense.o view income.o
+main:main.o budget.o currency.o statisticalreport.o viewexpense.o viewincome.o
   g++ $^ -o $@
