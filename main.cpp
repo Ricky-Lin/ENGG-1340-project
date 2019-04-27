@@ -1,3 +1,4 @@
+//Function:main function
 include<iostream>
 include<string>
 using namespace std;
@@ -14,13 +15,13 @@ main(){
   record * a=new record [max];
   record * b=new record [max];
   int i=0,j=0;
-  string x;
-  cout<<"What do you want to do?"<<endl;
-  cout<<"Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE"<<endl;
-  cin>>x;
+  int funct;
+  cout<<"Please select function."<<endl;
+  cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
+  cin>>funct;
   while(true){
-   if (x=="INCOME"){
-     for (i;i<max;i++){
+   if (funct==1){
+     while (i<max){
        //Get user's input of the amonut of money, the account type, the type of money and date of income records.
        cout<<"Please enter the amount of money."<<endl;
        cin>>a[i].money;
@@ -30,22 +31,25 @@ main(){
        cin>>a[i].accounttype;
        cout<<"Please enter the date."<<endl;
        cin>>a[i].date;
-       cout<<"CONTINUE or FINISH?"<<endl;
-       cin>>x;
-       if (x=="FINISH"){
-         i=i+1;
+       i+=1;
+       if (i>max){
+         cout<<"Record is full."<<endl;
          break;
-       }  
+       }
+       cout<<"1.CONTINUE 2.FINISH"<<endl;
+       cin>>funct;
+       if (funct==2){
+         break;
+       }
      }
-   cout<<"What do you want to do?"<<endl;
-   cout<<"Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE"<<endl;
-   cin>>x; 
-   }
-   if (x=="EXPENSE"){
+   cout<<"Please select function"<<endl;
+   cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
+   cin>>funct; 
+   if (funct==2){
      double budget;
      cout<<"Please enter your budget."<<endl;
      cin>>budget;
-     for (j;j<max;j++){
+     while (j<max){
        //Get user's input of the amonut of money, the account type, the type of money and date of expense records.
        cout<<"Please enter the amount of money."<<endl;
        cin>>b[j].money;
@@ -55,55 +59,59 @@ main(){
        cin>>b[j].accounttype;
        cout<<"Please enter the date."<<endl;
        cin>>b[j].date;
-       cout<<"CONTINUE or FINISH?"<<endl;
-       cin>>x;
-       if (x=="FINISH"){
+       j+=1;
+       if (j>max){
+         cout<<"Record is full."<<endl;
+         break;
+       }
+       cout<<"1.CONTINUE 2.FINISH"<<endl;
+       cin>>funct;
+       if (funct==2){
          budget(b,j,budget);//Call the budget function to see if the user's expenses reach the budget.
-         j=j+1
          break;
        }  
      }
-   cout<<"What do you want to do?"<<endl;
-   cout<<"Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE"<<endl;
-   cin>>x;
+   cout<<"Please select function."<<endl;
+   cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
+   cin>>funct;
    }
-   if (x=="REPORT"){
+   if (funct==3){
      report(a,b,i,j);//Call the report function.
-     cout<<"What do you want to do?"<<endl;
-     cout<<"Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE"<<endl;
+     cout<<"Please select function."<<endl;
+     cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
      cin>>x;
    }  
-   if (x=="VIEWINCOME"){
+   if (funct==4){
      viewincome(a,max);//Call the viewincome function.
-     cout<<"What do you want to do?"<<endl;
-     cout<<"Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE"<<endl;
+     cout<<"Please select function."<<endl;
+     cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
      cin>>x;
    } 
-   if (x=="VIEWEXPENSE"){
+   if (funct==5){
      viewexpense(b,max);//Call the viewexpense function.
-     cout<<"What do you want to do?"<<endl;
-     cout<<"Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE"<<endl;
+     cout<<"Please select function."<<endl;
+     cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
      cin>>x;
    }
-   if (x=="CURRENCY"){
+   if (funct==6){
      currency();//Call the currency function.
-     cout<<"What do you want to do?"<<endl;
-     cout<<"Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE"<<endl;
+     cout<<"Please select function."<<endl;
+     cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
      cin>>x;
    } 
-   if (x=="DELETEIN"){
+   if (funct==7){
      delete [] a; //This line is to delete income records.
-     cout<<"What do you want to do?"<<endl;
-     cout<<"Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE"<<endl;
+     cout<<"Please select function."<<endl;
+     cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
      cin>>x;
    }
-   if (x=="DELETEEX"){
+   if (funct==8){
      delete [] b; //This line is to delete expense records.
-     cout<<"What do you want to do?"<<endl;
-     cout<<"Please enter: 1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.DONE"<<endl;
+     cout<<"Please select function."<<endl;
+     cout<<"1.INCOME 2.EXPENSE 3.REPORT 4.VIEWINCOME 5.VIEWEXPENSE 6.CURRENCY 7.DELETEIN 8.DELETEEX 9.EXIT"<<endl;
      cin>>x;
    } 
-   if (x=="DONE"){
+   if (funct==9){
      break;
    } 
  }
