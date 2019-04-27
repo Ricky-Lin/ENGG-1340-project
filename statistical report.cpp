@@ -1,4 +1,6 @@
-//Get the type of certain expenses or incomes from user and print user's monthly incomes, expensed and percentage of particular expenses or incomes.
+//Function:Print statistical report of users’ financial state.
+//Input:income record,expense record
+//Output:monthly income,monthly expense,percentage of selected incomes,percentage of selected expenses
 void report(record * a, record * b,int num1,int num2){
   double t1=0,t2=0,t3=0,t4=0;
   string x,y;
@@ -11,7 +13,7 @@ void report(record * a, record * b,int num1,int num2){
   }
   cout<<"Your monthly expenses are "<<t2<<"."<<endl;
   while (true){
-   cout<<"The percentage of what incomes do ypu want to check?"<<endl;
+   cout<<"The percentage of what incomes do you want to check?"<<endl;
    cin>>x;
    for (int i=0;i<=num1;i++){
      if (a[i].moneytype==x){
@@ -26,7 +28,7 @@ void report(record * a, record * b,int num1,int num2){
    }
   } 
   while (true){  
-   cout<<"The percentage of what expenses do ypu want to check?"<<endl;
+   cout<<"The percentage of what expenses do you want to check?"<<endl;
    cin>>y;
    for (int j=0;j<=num2;j++){
      if (b[j].moneytype==y){
