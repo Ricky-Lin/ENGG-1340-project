@@ -1,6 +1,7 @@
 //Function:Print statistical report of users’ financial state.
 //Input:income record,expense record
 //Output:monthly income,monthly expense,percentage of selected incomes,percentage of selected expenses
+
 void report(record * a, record * b,int num1,int num2){
   double t1=0,t2=0,t3=0,t4=0;
   string x,y;
