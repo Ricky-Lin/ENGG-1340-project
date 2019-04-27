@@ -11,22 +11,22 @@ void currency(){
     cin>>HKD>>currency;
     switch(currency){
       case 1:
-        cout<<"The exchanged money is "<<HKD*0.13<<currency<<"."<<endl;
+        cout<<"The exchanged money is USD "<<HKD*0.13<<currency<<"."<<endl;
         break;
       case 2:
-        cout<<"The exchanged money is "<<HKD*0.86<<currency<<"."<<endl;
+        cout<<"The exchanged money is RMB "<<HKD*0.86<<currency<<"."<<endl;
         break;
       case 3:
-        cout<<"The exchanged money is "<<HKD*14.27<<currency<<"."<<endl;
+        cout<<"The exchanged money is YEN "<<HKD*14.27<<currency<<"."<<endl;
         break;
       case 4:
-        cout<<"The exchanged money is "<<HKD*0.11<<currency<<"."<<endl;
+        cout<<"The exchanged money is EURO "<<HKD*0.11<<currency<<"."<<endl;
         break;
       case 5:
-        cout<<"The exchanged money is "<<HKD*0.098<<currency<<"."<<endl;
+        cout<<"The exchanged money is GBP "<<HKD*0.098<<currency<<"."<<endl;
         break;
       case 6:
-        cout<<"The exchanged money is "<<HKD*145.95<<currency<<"."<<endl;
+        cout<<"The exchanged money is KRW "<<HKD*145.95<<currency<<"."<<endl;
         break;
       default:
         cout<<"Sorry for unsupported currency."<<endl;
