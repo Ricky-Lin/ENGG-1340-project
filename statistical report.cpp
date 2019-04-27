@@ -5,6 +5,7 @@
 void report(record * a, record * b,int num1,int num2){
   double t1=0,t2=0,t3=0,t4=0;
   string x,y;
+  int continue;
   for (int i=0;i<=num1;i++){
     t1+=a[i].money;
   } 
@@ -22,9 +23,9 @@ void report(record * a, record * b,int num1,int num2){
      }  
    }
    cout<<"The percentage of the income"<<x<<" is "<<fixed<<setprecision(1)<<t3/t1*100<<"%."<<endl;
-   cout<<"Check another one or stop?"<<endl;
-   cin>>x;
-   if (x=="Stop"){
+   cout<<"1.Continue 2.Exit"<<endl;
+   cin>>continue;
+   if (continue==2){
      break;
    }
   } 
@@ -36,12 +37,12 @@ void report(record * a, record * b,int num1,int num2){
        t4+=b[j].money;
      }  
    }
-  cout<<"The percentage of the expense"<<y<<" is "<<fixed<<setprecision(1)<<t4/t2*100<<"%."<<endl;
-  cout<<"Check another one or stop?"<<endl;
-  cin>>y;
-  if (y=="Stop"){
-    break;
-  }  
- }
+   cout<<"The percentage of the expense"<<y<<" is "<<fixed<<setprecision(1)<<t4/t2*100<<"%."<<endl;
+   cout<<"1.Continue 2.Exit"<<endl;
+   cin>>continue;
+   if (continue==2){
+     break;
+   }
+  }
 }  
 
